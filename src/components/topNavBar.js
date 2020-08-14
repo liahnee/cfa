@@ -23,13 +23,14 @@ const TopNavBar = props => {
     return (
         <div class="top-nav-bar">
             <CFALogo/>
+            
+            <div class="top-nav-group">
             <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                 Open Menu
             </Button>
-            <Menu
+                <Menu
                 id="simple-menu"
                 anchorEl={anchorEl}
-                keepMounted
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
             >
@@ -37,6 +38,8 @@ const TopNavBar = props => {
                 <MenuItem onClick={handleClose}>My account</MenuItem>
                 <MenuItem onClick={handleClose}>Logout</MenuItem>
             </Menu>
+            </div>
+            
         </div>
     );
 }
