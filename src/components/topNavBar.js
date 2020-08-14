@@ -1,7 +1,12 @@
 import React from 'react';
-import Button from 'material-ui/core/Button';
-import Menu from 'material-ui/core/Menu';
-import MenuItem from 'material-ui/core/MenuItem';
+
+import '../stylesheets/topNavBar.css';
+
+import CFALogo from './cfaLogo';
+
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 
 const TopNavBar = props => {
 
@@ -17,6 +22,7 @@ const TopNavBar = props => {
   
     return (
         <div class="top-nav-bar">
+            <CFALogo/>
             <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                 Open Menu
             </Button>

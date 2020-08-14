@@ -5,7 +5,7 @@ import CFAIndex from './p_cfa/index';
 import CFKIndex from './p_cfk/index';
 import DSFAIndex from './p_dsfa/index';
 
-export default Routes = props => {
+const Routes = props => {
     
 
     return (
@@ -23,4 +23,6 @@ export default Routes = props => {
             </Route>
         </React.Fragment>
     )
-}
+};
+
+export default Routes;
