@@ -8,40 +8,33 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
-const TopNavBar = props => {
+const TopNavBar = (props) => {
+	const [ anchorEl, setAnchorEl ] = React.useState(null);
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
+	const handleClick = (event) => {
+		setAnchorEl(event.currentTarget);
+	};
 
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
+	const handleClose = () => {
+		setAnchorEl(null);
     };
-  
-    const handleClose = () => {
-      setAnchorEl(null);
-    };
-  
-    return (
-        <div class="top-nav-bar">
-            <CFALogo/>
-            
-            <div class="top-nav-group">
-            <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-                Open Menu
-            </Button>
-                <Menu
-                id="simple-menu"
-                anchorEl={anchorEl}
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-            >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
-                <MenuItem onClick={handleClose}>Logout</MenuItem>
-            </Menu>
-            </div>
-            
-        </div>
-    );
-}
+    
+	return (
+		<div class="top-nav-bar">
+			<CFALogo />
+
+			<nav class="top-nav-group">
+				<ul class="top-nav-list">
+					<a class="top-nav-item">
+						<li>About Us</li>
+					</a>
+					<a class="top-nav-item">
+						<li>Donate</li>
+					</a>
+				</ul>
+			</nav>
+		</div>
+	);
+};
 
 export default TopNavBar;

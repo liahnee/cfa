@@ -5,13 +5,10 @@ import Routes from './routes';
 
 function CFAIndex() {
   return (
-    <div className="cfa-home">
-      <header className="cfa-header">
+    <div className="index">
         <CFANavBar />
-      </header>
-      <main>
+        testing
         <Routes />
-      </main>
     </div>
   );
 }

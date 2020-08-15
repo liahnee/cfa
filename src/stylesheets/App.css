@@ -1,0 +1,21 @@
+.App, .index {
+  height: 100vh;
+}
+
+.sec-navbar {
+  position: sticky;
+  top: 4rem;
+  height: 3rem;
+  width: 100vw;
+  z-index: 99;
+}
+
+.sec-navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
