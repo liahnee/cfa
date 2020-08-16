@@ -18,11 +18,10 @@ const Banner = props => {
     }
 
     return (
-        <div className="banner-intro banner">
+        <div className="banner-intro">
             <div className="banner-text">
                 
                 <div class="banner-button">
-                    Fall Courses
                 </div>
             </div>
         </div>

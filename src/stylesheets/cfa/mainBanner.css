@@ -3,20 +3,21 @@
     z-index: 5;
     display: grid;
     grid-template-areas:
-    ". . . . . . . . . . "
-    ". . . . . . . . . . "
-    "a a a a . . . . . . "
-    "a a a a . . . . . . "
-    "a a a a . . . . . . "
-    ". . . . . . . . . . ";
+    ". . ."
+    ". a ."
+    ". . .";
+    grid-template-columns: 5vw 40vw auto;
+    grid-template-rows: 30vh 40vh auto ;
     height: 80vh;
     width: 100vw;
+    border-bottom: 5px solid rgb(23, 23, 73);
+    margin: 0;
 }
 
 
 
 .banner-text {
-    background-color: rgba(255, 255, 255, 0.89);
+    background-color: rgb(255, 255, 255);
     position: relative;
     z-index: 20;
     grid-area: a;

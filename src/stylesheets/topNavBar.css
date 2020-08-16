@@ -9,15 +9,29 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0em;
-    background: rgba(255, 255, 255, 0.37);
+    /* background: rgba(255, 255, 255, 0.37); */
 }
 
 .cfa-logo-img {
     position: relative;
-    top: 1rem;
+    top: 2rem;
     left: 0;
     height: 4rem;
     transition: left 0.5s;
+    animation: colorin 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorin {
+    0% {
+        filter: grayscale(100%);
+    }
+    92% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
 }
 
 .cfa-logo-img:hover {

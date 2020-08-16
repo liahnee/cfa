@@ -8,15 +8,36 @@
     position: relative;
     z-index: 0;
 }
-
-.dsfa-banner {
+.banner {
     height: 70vh;
     width: 100vw;
     position: relative;
     z-index: 5;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.dsfa-banner img {
-    height: 50vh;
+.banner-container {
+    width: 80vw;
+    height: 80%;
+    display: grid;
+    grid-template-rows: 5rem auto;
+}
+
+.banner-container .header {
+    display: grid;
+    grid-template-columns: 30vw auto;
+}
+
+.banner-container .header > span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-right: 5px solid black;
+}
+
+#dsfa-banner {
+    background-color: rgb(244, 248, 255);
 }
