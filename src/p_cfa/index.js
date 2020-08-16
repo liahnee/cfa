@@ -7,7 +7,6 @@ function CFAIndex() {
   return (
     <div className="index">
         <CFANavBar />
-        testing
         <Routes />
     </div>
   );

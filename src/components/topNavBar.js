@@ -20,15 +20,17 @@ const TopNavBar = (props) => {
     };
     
 	return (
-		<div class="top-nav-bar">
-			<CFALogo />
+		<div className="top-nav-bar">
+			<div className="logo-container">
+                <CFALogo />
+            </div>
 
-			<nav class="top-nav-group">
-				<ul class="top-nav-list">
-					<a class="top-nav-item">
+			<nav className="top-nav-group">
+				<ul className="top-nav-list">
+					<a className="top-nav-item">
 						<li>About Us</li>
 					</a>
-					<a class="top-nav-item">
+					<a className="top-nav-item">
 						<li>Donate</li>
 					</a>
 				</ul>

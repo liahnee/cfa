@@ -8,8 +8,8 @@ import Donate from './donate';
 const Routes = props => {
 
     return (
-        <React.Fragment>
-            <Route exact path="/cfa">
+        <div className="page">
+            <Route exact path="/">
                 <Home />
             </Route>
 
@@ -20,7 +20,7 @@ const Routes = props => {
             <Route exact path="/cfa/donate">
                 <Donate />
             </Route>
-        </React.Fragment>
+        </div>
     )
 };
 

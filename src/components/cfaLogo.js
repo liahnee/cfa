@@ -4,9 +4,9 @@ import Logo from '../assets/logos/logo_CFA_l.png';
 
 const CFALogo = (props) => {
 	return (
-		<div class="cfa-logo">
-			<a class="cfa-logo-link" href="/cfa">
-				<img class="cfa-logo-img" src={Logo} />
+		<div className="cfa-logo">
+			<a className="cfa-logo-link" href="/cfa">
+				<img className="cfa-logo-img" src={Logo} alt="CFA logo"/>
 			</a>
 		</div>
 	);

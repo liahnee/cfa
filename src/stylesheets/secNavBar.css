@@ -1,0 +1,18 @@
+.sec-navbar {
+    height: 3rem;
+    width: 100vw;
+    z-index: 99;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .sec-navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 2rem 0 0;
+  }
