@@ -21,9 +21,7 @@ const TopNavBar = (props) => {
     
 	return (
 		<div className="top-nav-bar">
-			<div className="logo-container">
-                <CFALogo />
-            </div>
+            <CFALogo />
 
 			<nav className="top-nav-group">
 				<ul className="top-nav-list">

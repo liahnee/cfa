@@ -1,0 +1,23 @@
+.banner-intro {
+    position: relative;
+    z-index: 5;
+    display: grid;
+    grid-template-areas:
+    ". . . . . . . . . . "
+    ". . . . . . . . . . "
+    "a a a a . . . . . . "
+    "a a a a . . . . . . "
+    "a a a a . . . . . . "
+    ". . . . . . . . . . ";
+    height: 80vh;
+    width: 100vw;
+}
+
+
+
+.banner-text {
+    background-color: rgba(255, 255, 255, 0.89);
+    position: relative;
+    z-index: 20;
+    grid-area: a;
+}

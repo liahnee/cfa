@@ -1,36 +1,27 @@
 .top-nav-bar {
     width: 100vw;
     height: 3rem;
+    position: relative;
     z-index: 100;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(7, 7, 7);
     font-size: 0.9rem;
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 0em;
+    background: rgba(255, 255, 255, 0.37);
 }
 
-.top-nav-bar ul {
-    margin: 0;
-}
 .cfa-logo-img {
     position: relative;
-    top: 0rem;
-    left: -1rem;
+    top: 1rem;
+    left: 0;
     height: 4rem;
-    transition: top 0.5s;
+    transition: left 0.5s;
 }
 
 .cfa-logo-img:hover {
-    top: -0.5rem;
-}
-
-.cfa-logo {
-    padding-bottom: 0.6rem;
-    position: fixed;
-    top: 2rem;
-    left: 3rem;
-    transition: border 0.2s;
+    left: 1rem;
 }
 
 .top-nav-group {
@@ -39,6 +30,7 @@
     padding: 0;
     height: inherit;
     align-items: flex-end;
+    justify-items: flex-end;
     margin-right: 2rem;
 }
 
@@ -46,6 +38,7 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    margin-left: auto;
 }
 
 .top-nav-item {

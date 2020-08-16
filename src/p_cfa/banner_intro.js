@@ -1,13 +1,15 @@
 import React from 'react';
 import DefaultBg from '../assets/banner_images/1.png';
 
+
+
 const Banner = props => {
 
     const styleBg = () => {
-        const backgroundImage = props.bg ? props.bg : `url(${DefaultBg}`;
+        const backgroundImage = props.bg ? props.bg : "";
         const backgroundSize = props.bgSize ? props.bgSize : "cover";
         const height = props.bgHeight ? props.bgHeight : "calc(100vh - 6rem)";
-        return {backgroundImage, backgroundSize, height, content: ""};
+        return {height};
     }
 
     const styleText = () => {
@@ -16,10 +18,13 @@ const Banner = props => {
     }
 
     return (
-        <div className="banner_intro banner" style={styleBg()}>
-            {/* <div className="banner-text" style={styleText()}>
-                {props.text}
-            </div> */}
+        <div className="banner-intro banner">
+            <div className="banner-text">
+                
+                <div class="banner-button">
+                    Fall Courses
+                </div>
+            </div>
         </div>
     )
 };
