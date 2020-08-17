@@ -47,6 +47,15 @@ const CFAHome = (props) => {
 	return (
 		<div className="cfa-home">
 			<TopBanner text={''} />
+			<div className="banner-intro-box">
+				<div> <i id="fb-i" class="material-icons">facebook</i> </div>
+				<div> <i id="youtube-i" class="fab fa-youtube"></i> </div>
+				<div> <i id="twitter-i" class="fab fa-twitter"></i> </div>
+				<div> 4 </div>
+				<div> 5 </div>
+			</div>
+            <div className="empty-div">
+            </div>
 			<div id="cfk-banner" className="banner">
 				<div className="banner-container">
 					<div className="header">
@@ -59,12 +68,12 @@ const CFAHome = (props) => {
 			<div id="dsfa-banner" className="banner dsfa">
 				<div className="banner-container">
 					<div className="header">
-						<span>Digital SKills for All</span>
+						<span>Digital Skills for All</span>
 						<quote />
 					</div>
 				</div>
 			</div>
-            <div id="cfa-c-banner" className="banner dsfa">
+			<div id="cfa-c-banner" className="banner dsfa">
 				<div className="banner-container">
 					<div className="header">
 						<span>CFA Competition</span>

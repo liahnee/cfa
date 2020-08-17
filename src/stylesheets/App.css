@@ -1,6 +1,6 @@
-.App {
+.App, .index {
   height: 100vh;
-  background-color: black;
+  width: 100vw;
   overflow-x: hidden;
   z-index: 0;
 }
