@@ -49,10 +49,10 @@ const CFAHome = (props) => {
 			<div className="fixed-bg cfk-bg">
 				<div id="cfk-content">
 					<div id="cfk-menu">
-						<div className="cfk-menu-item"><span>CAMP and ENRICHMENT CLASSES</span></div>
-						<div className="cfk-menu-item"><span>KIDS TEACH KIDS</span></div>
-						<div className="cfk-menu-item"><span>PROJECT GALLERY</span></div>
-						<div className="cfk-menu-item"><span>OUR TEACHERS</span></div>
+						<div className="cfk-menu-item"><span>CAMP and ENRICHMENT CLASSES <br/> HOVER ME</span></div>
+						<div className="cfk-menu-item"><span>KIDS TEACH KIDS<br/> HOVER ME</span></div>
+						<div className="cfk-menu-item"><span>PROJECT GALLERY<br/> HOVER ME</span></div>
+						<div className="cfk-menu-item"><span>OUR TEACHERS<br/> HOVER ME</span></div>
 					</div>
 					<div id="cfk-summary">
 						<p>CFK Program</p>
