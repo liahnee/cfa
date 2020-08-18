@@ -1,6 +1,6 @@
 .slide-out {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     position: absolute;
     margin: 0 auto;
     display: flex;
@@ -15,12 +15,12 @@
  
 @keyframes slideOut {
  0% {
-     height: 90vh;
+     height: 95vh;
      opacity: 1;;
  }
 
  40% {
-     height: 90vh;
+     height: 95vh;
      opacity: 1;
  }
 
