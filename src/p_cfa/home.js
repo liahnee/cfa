@@ -96,7 +96,7 @@ const cfkCards = [
 		},
 		img: {
 			src: CFK1,
-			alt: 'skills of 21st century'
+			alt: 'writing of skill and hands'
 		},
 		title: 'Skill of the 21st Century',
 		desc:
@@ -109,24 +109,24 @@ const cfkCards = [
 			size: ''
 		},
 		img: {
-			src: '',
-			alt: ''
+			src: CFK2,
+			alt: 'resilience written on post-it'
 		},
-		title: '',
-		desc: ''
+		title: 'Enhances problem-solving skills',
+		desc: 'Coding helps kids learn problem-solving skills and logic. It engages different parts of their brains and teaches kids to think sequentially while allowing them to be creative. Kids start to break down large problems into smaller parts to be able to solve them effectively.'
 	},
 	{
 		icon: {
 			icon: '',
 			color: '',
-			size: ''
+			size: 'people looking at computer'
 		},
 		img: {
-			src: '',
+			src: CFK3,
 			alt: ''
 		},
-		title: '',
-		desc: ''
+		title: 'Builds resilience in children',
+		desc: 'Coding presents kids with a challenge and teaches them to not give up in the face of adversity (or a code gone wrong). Bouncing back from failure fosters resilience in them!'
 	}
 ];
 

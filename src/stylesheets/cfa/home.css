@@ -11,7 +11,9 @@
     position: fixed;
     z-index: 5;
 }
-
+.App:hover {
+    cursor: default;
+}
 /* top banner */
 
 .banner-intro {
@@ -24,9 +26,10 @@
     ". . .";
     grid-template-columns: 5vw 40vw auto;
     grid-template-rows: 20vh 40vh auto ;
-    height:80vh;
+    height:68vh;
     width: 100vw;
     margin: 0;
+    border-bottom: 5px solid rgb(0, 0, 85);
 }
 
 .banner-text {
@@ -51,10 +54,16 @@
     font-weight: normal;
 }
 
+.App:hover {
+    cursor: default;
+}
+
+
+
 /* floating buttons/menus on the top banner bottom border */
 
 .banner-intro-box {
-    margin: -5% 5rem -2% auto;
+    margin: -4% 5rem -2% auto;
     width: 60%;
     height: 5rem;
     position: relative;
