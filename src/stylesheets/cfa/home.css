@@ -20,7 +20,7 @@
     display: grid;
     grid-template-areas:
     ". . ."
-    ". a a"
+    "a a a"
     ". . .";
     grid-template-columns: 5vw 40vw auto;
     grid-template-rows: 20vh 40vh auto ;
@@ -39,13 +39,17 @@
     font-size: 60px;
     font-weight: bold;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 0 0 4rem 10vw ;
 }
 
-.banner-text span {
-    padding-bottom: 2rem;
+.banner-text p {
+    font-size: 24px;
+    font-weight: normal;
 }
-
 
 /* floating buttons/menus on the top banner bottom border */
 
@@ -179,7 +183,7 @@
     position: relative;
     width: 60%;
     color:white;
-    padding: 3rem 2rem 5rem 3rem;
+    padding: 3rem 2rem 8grem 3rem;
     font-size: 24px;
     font-weight: 600;
     line-height: 2rem;

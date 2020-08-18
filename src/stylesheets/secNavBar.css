@@ -20,7 +20,7 @@
     justify-content: flex-end;
     padding: 0 2rem 0 0;
     margin: 0;
-    border-bottom: 3px solid var(--color-setblue);
+    /* border-bottom: 3px solid var(--color-setblue); */
   }
 
   .sec-nav-item {

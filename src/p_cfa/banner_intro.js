@@ -18,8 +18,8 @@ const Banner = (props) => {
 		<div className="banner-intro">
 			<div className="banner-intro-background" />
 			<div className="banner-text">
-				<span>Computing For ALL</span>
-				
+				<span>Computing for All</span>
+				<p><em>Dedicated to developing the future of tech talent through education.</em></p>
 				<div class="banner-button" />
 			</div>
 		</div>
