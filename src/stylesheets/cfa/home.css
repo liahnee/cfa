@@ -205,9 +205,6 @@
     color: white;
     font-size: 1.4rem;
     font-weight: bold;
-    position: absolute;
-    bottom: 2rem;
-    left: 10rem;
     padding: 0.8rem 1.8rem 0.8rem 1.8rem;
     /* border: 2px solid rgba(2, 0, 138, 0.514); */
     /* box-shadow: 0px -1px 3px rgb(0, 0, 110) inset; */
@@ -288,8 +285,6 @@
 
 #cfk-summary {
     background-color: rgba(0, 0, 0, 0.651);
-    position: relative;
-    padding-bottom: 14rem;
 }
 
 #cfk-summary > p {
@@ -321,10 +316,17 @@
 
 #cfk-summary > p:last-child {
     margin-bottom: 3rem;
+    position: relative;
+}
+
+#cfk-summary > div:last-child {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
 }
 
 #cfk-summary .span-button {
-    bottom: 6rem;
+    width: fit-content;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
 }
@@ -402,4 +404,9 @@
     z-index: 10;
 }
 
+.dsfa-youth .span-button {
 
+    position: absolute;
+    bottom: 2rem;
+    left: 10rem;
+}

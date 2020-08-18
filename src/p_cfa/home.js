@@ -66,19 +66,25 @@ const CFAHome = (props) => {
 			</div>
 			<div className="fixed-bg cfk-bg">
 				<div id="cfk-content">
-				<div id="cfk-summary">
+					<div id="cfk-summary">
 						<p>CFK Program</p>
 						<p>
 							“Kids who learn collaborative problem-solving computing skills early in their education will
-							be equipped to become creators rather than just consumers of technology.” <br /><br />
+							be equipped to become creators rather than just consumers of technology.” <br />
+							<br />
 							<em>- Ritu Bahl, Computing Kids Founder</em>
 						</p>
-						<p> Computing Kids is your source for high quality, project-based CAMPS and CLASSES throughout Seattle and the surrounding metro area.</p>
+						<p>
+							Computing Kids is your source for high quality, project-based CAMPS and CLASSES throughout
+							Seattle and the surrounding metro area.
+						</p>
 						<p>
 							And now find us ONLINE! Take advantage of our exciting and interactive classes from the
 							comfort &amp; security of home.
 						</p>
-						<span className="span-button">View Our Courses</span>
+						<div>
+							<span className="span-button">View Our Courses</span>
+						</div>
 					</div>
 					<div id="cfk-menu">
 						<div className="cfk-menu-item one">
@@ -94,7 +100,6 @@ const CFAHome = (props) => {
 							<span>OUR TEACHERS</span>
 						</div>
 					</div>
-					
 				</div>
 			</div>
 			<div id="dsfa-banner" className="banner dsfa">
