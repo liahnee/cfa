@@ -23,7 +23,7 @@ const TopNavBar = (props) => {
 				<ul className="top-nav-list">
 					<a className="top-nav-item">
 						<li>
-							<FontAwesomeIcon icon={[ 'fab', 'facebook' ]} color="#3b5998" size="1x" /> FB
+							<FontAwesomeIcon icon={[ 'fab', 'facebook' ]} color="#3b5998" size="1x" /> Facebook
 						</li>
 					</a>
 					<a className="top-nav-item">

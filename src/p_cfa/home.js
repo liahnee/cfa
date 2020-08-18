@@ -19,11 +19,26 @@ const CFAHome = (props) => {
 		<div className="cfa-home">
 			<TopBanner text={''} />
 			<div className="banner-intro-box">
-				<div> <FontAwesomeIcon icon={faHandsHelping} size="2x"/> <span>Volunteer</span>  </div>
-				<div> <FontAwesomeIcon icon={faNewspaper} size="2x"/> <span>Our News</span>  </div>
-				<div> <FontAwesomeIcon icon={faUsers} size="2x"/> <span>Teams</span>  </div>
-				<div> <FontAwesomeIcon icon={faQuestion} size="2x"/> <span>Support</span>  </div>
-				<div> <FontAwesomeIcon icon={faAt} size="2x"/> <span>Contact</span>  </div>
+				<div>
+					{' '}
+					<FontAwesomeIcon icon={faHandsHelping} size="2x" /> <span>Volunteer</span>{' '}
+				</div>
+				<div>
+					{' '}
+					<FontAwesomeIcon icon={faNewspaper} size="2x" /> <span>Our News</span>{' '}
+				</div>
+				<div>
+					{' '}
+					<FontAwesomeIcon icon={faUsers} size="2x" /> <span>Teams</span>{' '}
+				</div>
+				<div>
+					{' '}
+					<FontAwesomeIcon icon={faQuestion} size="2x" /> <span>Support</span>{' '}
+				</div>
+				<div>
+					{' '}
+					<FontAwesomeIcon icon={faAt} size="2x" /> <span>Contact</span>{' '}
+				</div>
 			</div>
 			{/* <div className="empty-div" /> */}
 			<div id="cfk-banner" className="banner">
@@ -37,7 +52,10 @@ const CFAHome = (props) => {
 						</p>
 					</div>
 					<p className="cfk-banner-intro">
-						Computing Kids offers camps and enrichment classes that teach computer science to K-8 students. With experienced instructors, small class sizes, and student-tested curriculum, our classes deliver fun, educational experiences in interactive environments made for learning, creating, and mastering technology skills.
+						Computing Kids offers camps and enrichment classes that teach computer science to K-8 students.
+						With experienced instructors, small class sizes, and student-tested curriculum, our classes
+						deliver fun, educational experiences in interactive environments made for learning, creating,
+						and mastering technology skills.
 					</p>
 					<div className="desc col3">
 						{cfkCards.map((card) => (
@@ -48,18 +66,39 @@ const CFAHome = (props) => {
 			</div>
 			<div className="fixed-bg cfk-bg">
 				<div id="cfk-content">
-					<div id="cfk-menu">
-						<div className="cfk-menu-item"><span>CAMP and ENRICHMENT CLASSES <br/> HOVER ME</span></div>
-						<div className="cfk-menu-item"><span>KIDS TEACH KIDS<br/> HOVER ME</span></div>
-						<div className="cfk-menu-item"><span>PROJECT GALLERY<br/> HOVER ME</span></div>
-						<div className="cfk-menu-item"><span>OUR TEACHERS<br/> HOVER ME</span></div>
-					</div>
-					<div id="cfk-summary">
+				<div id="cfk-summary">
 						<p>CFK Program</p>
+						<p>
+							“Kids who learn collaborative problem-solving computing skills early in their education will
+							be equipped to become creators rather than just consumers of technology.” <br /><br />
+							<em>- Ritu Bahl, Computing Kids Founder</em>
+						</p>
 						<p> Computing Kids is your source for high quality, project-based CAMPS and CLASSES </p>
-						
-						<p>“Kids who learn collaborative problem-solving computing skills early in their education will be equipped to become creators rather than just consumers of technology.” <br/>… Ritu Bahl, Computing Kids Founder</p>
+						<p>
+							We offer camps and programs in public schools, private schools, and community spaces
+							throughout Seattle and the surrounding metro area. Look for Computing Kids’ Summer 2020
+							camps at Pacific Science Center, Bellevue College, Lakeside School and more.
+						</p>
+						<p>
+							And now find us ONLINE! Take advantage of our exciting and interactive classes from the
+							comfort &amp; security of home.
+						</p>
 					</div>
+					<div id="cfk-menu">
+						<div className="cfk-menu-item one">
+							<span>CAMP &amp; CLASSES </span>
+						</div>
+						<div className="cfk-menu-item two">
+							<span>KIDS TEACH KIDS</span>
+						</div>
+						<div className="cfk-menu-item three">
+							<span>PROJECT GALLERY</span>
+						</div>
+						<div className="cfk-menu-item four">
+							<span>OUR TEACHERS</span>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 			<div id="dsfa-banner" className="banner dsfa">
@@ -132,7 +171,8 @@ const cfkCards = [
 			alt: 'resilience written on post-it'
 		},
 		title: 'Enhances problem-solving skills',
-		desc: 'Coding helps kids learn problem-solving skills and logic. It engages different parts of their brains and teaches kids to think sequentially while allowing them to be creative. Kids start to break down large problems into smaller parts to be able to solve them effectively.'
+		desc:
+			'Coding helps kids learn problem-solving skills and logic. It engages different parts of their brains and teaches kids to think sequentially while allowing them to be creative. Kids start to break down large problems into smaller parts to be able to solve them effectively.'
 	},
 	{
 		icon: {
@@ -145,7 +185,8 @@ const cfkCards = [
 			alt: ''
 		},
 		title: 'Builds resilience in children',
-		desc: 'Coding presents kids with a challenge and teaches them to not give up in the face of adversity (or a code gone wrong). Bouncing back from failure fosters resilience in them!'
+		desc:
+			'Coding presents kids with a challenge and teaches them to not give up in the face of adversity (or a code gone wrong). Bouncing back from failure fosters resilience in them!'
 	}
 ];
 
