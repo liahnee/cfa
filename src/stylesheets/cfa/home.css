@@ -26,7 +26,7 @@
     ". . .";
     grid-template-columns: 5vw 40vw auto;
     grid-template-rows: 20vh 40vh auto ;
-    height:68vh;
+    height:73vh;
     width: 100vw;
     margin: 0;
     border-bottom: 5px solid rgb(0, 0, 85);
@@ -63,37 +63,58 @@
 /* floating buttons/menus on the top banner bottom border */
 
 .banner-intro-box {
-    margin: -4% 5rem -2% auto;
+    margin: -4rem 5rem -3rem auto;
     width: 60%;
-    height: 5rem;
+    height: 7rem;
     position: relative;
     z-index: 10;
     background-color: var(--color-mid-btns);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-
     box-shadow: 3px 2px 2px 0px rgba(0, 0, 0, 0.356);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-intro-box > div {
     display: flex;
+    height:70%;
     text-align: center;
     align-items: center;
     justify-content: center;
     font-size: 36px;
-    margin: 0.5rem;
+    padding: 0;
     border-right: 1px solid rgb(161, 161, 161);
+
+    display: flex;
+    flex-direction: column;
 }
 .banner-intro-box > div:last-child {
     border: none;
 }
-
 
 .banner-intro-box > div:hover {
     cursor: pointer;
 }
 
 
+.banner-intro-box span {
+    font-size: 20px ;
+    color: rgb(77, 77, 77);
+    padding-top: 0.6rem;
+}
+
+.banner-intro-box > div:hover span {
+    color: rgb(3, 3, 54);
+}
+.banner-intro-box > div svg {
+    opacity: 0.6;
+    font-size: 3rem;
+}
+.banner-intro-box > div:hover svg {
+    opacity: 1;
+}
 
 .empty-div {
     position: relative;

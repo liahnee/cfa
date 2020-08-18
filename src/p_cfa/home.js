@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { faRocket } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAt, faQuestion, faUsers, faNewspaper, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
 
 import '../stylesheets/cfa/home.css';
 
@@ -18,11 +19,11 @@ const CFAHome = (props) => {
 		<div className="cfa-home">
 			<TopBanner text={''} />
 			<div className="banner-intro-box">
-				<div> </div>
-				<div> </div>
-				<div> </div>
-				<div> </div>
-				<div> </div>
+				<div> <FontAwesomeIcon icon={faHandsHelping} size="2x"/> <span>Volunteer</span>  </div>
+				<div> <FontAwesomeIcon icon={faNewspaper} size="2x"/> <span>Our News</span>  </div>
+				<div> <FontAwesomeIcon icon={faUsers} size="2x"/> <span>Teams</span>  </div>
+				<div> <FontAwesomeIcon icon={faQuestion} size="2x"/> <span>Support</span>  </div>
+				<div> <FontAwesomeIcon icon={faAt} size="2x"/> <span>Contact</span>  </div>
 			</div>
 			<div className="empty-div" />
 			<div id="cfk-banner" className="banner">
@@ -30,7 +31,6 @@ const CFAHome = (props) => {
 					<div className="header">
 						<span>Computing for Kids</span>
 						<p className="banner-desc">
-							{' '}
 							<em>
 								Shaping Students.<br />Shaping Future.
 							</em>
