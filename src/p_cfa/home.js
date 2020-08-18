@@ -168,7 +168,7 @@ const cfkCards = [
 			size: ''
 		},
 		img: {
-			src: CFK2,
+			src: CFK3,
 			alt: 'resilience written on post-it'
 		},
 		title: 'Enhances problem-solving skills',
@@ -182,7 +182,7 @@ const cfkCards = [
 			size: 'people looking at computer'
 		},
 		img: {
-			src: CFK3,
+			src: CFK2,
 			alt: ''
 		},
 		title: 'Builds resilience in children',
