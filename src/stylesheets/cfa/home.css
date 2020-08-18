@@ -1,6 +1,7 @@
 :root {
     --color-box: rgba(50, 56, 139, 0.808);
     --color-mid-btns: white;
+    --color-section-border: rgb(0, 0, 85);
 }
 
 /* background applied only to cfa home */
@@ -29,7 +30,7 @@
     height:73vh;
     width: 100vw;
     margin: 0;
-    border-bottom: 5px solid rgb(0, 0, 85);
+    border-bottom: 5px solid var(--color-section-border);
 }
 
 .banner-text {
@@ -118,7 +119,7 @@
 
 .empty-div {
     position: relative;
-    height: 200px;
+    height: 100px;
     width:100vw;
     background-color: white;
 }
@@ -132,7 +133,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem 0 8rem 0;
+    padding: 8rem 0 8rem 0;
 }
 
 .banner-container {
@@ -189,13 +190,57 @@
     padding-top: 2rem;
 }
 
+.fixed-bg {
+    height: 80vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 /* individual banners */
+
+/* cfk fixed bg */
+
+.cfk-bg {
+    background-image: url('../../assets/banner_images/1.png');
+}
+
+#cfk-content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    display: grid;
+    grid-template-columns: 40vw auto;
+}
+#cfk-menu {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c d";
+}
+.cfk-menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.733);
+}
+#cfk-summary {
+    background-color: rgba(0, 0, 0, 0.185);
+}
+/* dsfk */
 
 #dsfa-banner {
     background-color: rgb(204, 210, 221);
 }
 
 /* dsfa youth */
+#dsfa-youth-banner {
+  border-bottom: 5px solid var(--color-section-border);
+  border-top: 5px solid var(--color-section-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .dsfa-youth {
     position: relative;
@@ -270,3 +315,4 @@
 .span-button:hover {
     cursor: pointer;
 }
+

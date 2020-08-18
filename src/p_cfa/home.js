@@ -25,7 +25,7 @@ const CFAHome = (props) => {
 				<div> <FontAwesomeIcon icon={faQuestion} size="2x"/> <span>Support</span>  </div>
 				<div> <FontAwesomeIcon icon={faAt} size="2x"/> <span>Contact</span>  </div>
 			</div>
-			<div className="empty-div" />
+			{/* <div className="empty-div" /> */}
 			<div id="cfk-banner" className="banner">
 				<div className="banner-container">
 					<div className="header">
@@ -43,6 +43,17 @@ const CFAHome = (props) => {
 					</div>
 				</div>
 			</div>
+			<div className="fixed-bg cfk-bg">
+				<div id="cfk-content">
+					<div id="cfk-menu">
+						<div className="cfk-menu-item">menu 1</div>
+						<div className="cfk-menu-item">menu 2</div>
+						<div className="cfk-menu-item">menu 3</div>
+						<div className="cfk-menu-item">menu 4</div>
+					</div>
+					<div id="cfk-summary"></div>
+				</div>
+			</div>
 			<div id="dsfa-banner" className="banner dsfa">
 				<div className="banner-container">
 					<div className="header">
@@ -50,7 +61,7 @@ const CFAHome = (props) => {
 					</div>
 				</div>
 			</div>
-			<div className="banner">
+			<div id="dsfa-youth-banner" className="banner">
 				<div className="dsfa-youth">
 					<div>
 						<p>
