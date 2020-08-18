@@ -12,14 +12,14 @@ const Routes = props => {
             <Route exact path="/">
                 <Home />
             </Route>
-
+{/* 
             <Route exact path="/cfa/aboutus">
                 <AboutUs />
             </Route>
 
             <Route exact path="/cfa/donate">
                 <Donate />
-            </Route>
+            </Route> */}
         </div>
     )
 };
