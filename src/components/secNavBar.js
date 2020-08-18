@@ -1,9 +1,5 @@
 import React from 'react';
 
-// import '../stylesheets/topNavBar.css';
-
-// props.logo = entity logo
-
 const createMenu = item => {
     let className = "sec-nav-item";
     if (item.className) {
@@ -11,8 +7,6 @@ const createMenu = item => {
     };
     const href = item.href ? item.href : null;
     const id = item.id ? item.id : null;
-
-    // const children = <ul> {item.sublist.map(listItem => createSublist(listItem))} </ul>;
 
     const menu = <a className={className} href={href} id={id}> <li> {item.menu}  </li></a>;
 
@@ -49,18 +43,3 @@ const SecNavBar = (props) => {
 
 export default SecNavBar;
 
-
-							// <a className="sec-nav-item">
-							// 	<li>
-							// 		{item.menu}
-							// 		<ul>
-							// 			{item.sublist.map((list) => {
-							// 				return (
-							// 					<a className="sec-nav-sublist-item" href="list.href">
-							// 						<li>{list.item}</li>
-							// 					</a>
-							// 				);
-							// 			})}
-							// 		</ul>
-							// 	</li>
-							// </a>

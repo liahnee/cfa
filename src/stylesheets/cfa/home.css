@@ -1,3 +1,4 @@
+
 :root {
     --color-box: rgba(50, 56, 139, 0.808);
     --color-mid-btns: white;
@@ -45,7 +46,6 @@
     color: white;
     font-family: 'Archivo Black', sans-serif;
     font-size: 60px;
-    font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -145,7 +145,7 @@
     height: 80%;
     display: grid;
     grid-template-rows: fit-content(30%);
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .banner-container .header {
@@ -183,7 +183,6 @@
     flex-direction: column;
     align-items: center;
     text-align: left;
-    padding: 2rem;
 }
 
 .col3 > div:last-child {
@@ -203,6 +202,17 @@
 }
 
 /* individual banners */
+
+/* cfk banner */
+
+.cfk-banner-intro {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 550;
+    letter-spacing: 0.05rem;
+    line-height: 1.4rem ;
+    color: rgb(39, 39, 39);
+}
 
 /* cfk fixed bg */
 
@@ -241,7 +251,7 @@
 /* dsfa youth */
 #dsfa-youth-banner {
   border-bottom: 5px solid var(--color-section-border);
-  border-top: 5px solid var(--color-section-border);
+  /* border-top: 5px solid var(--color-section-border); */
   display: flex;
   align-items: center;
   justify-content: center;

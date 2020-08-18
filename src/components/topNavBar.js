@@ -23,17 +23,17 @@ const TopNavBar = (props) => {
 				<ul className="top-nav-list">
 					<a className="top-nav-item">
 						<li>
-							<FontAwesomeIcon icon={[ 'fab', 'facebook' ]} color="#3b5998" size="2x" />
+							<FontAwesomeIcon icon={[ 'fab', 'facebook' ]} color="#3b5998" size="1x" /> FB
 						</li>
 					</a>
 					<a className="top-nav-item">
 						<li>
-							<FontAwesomeIcon icon={[ 'fab', 'youtube' ]} color="#c4302b" size="2x"  />
+							<FontAwesomeIcon icon={[ 'fab', 'youtube' ]} color="#c4302b" size="1x"  /> YouTube
 						</li>
 					</a>
 					<a className="top-nav-item">
 						<li>
-							<FontAwesomeIcon icon={[ 'fab', 'twitter' ]} color="#00acee" size="2x" />
+							<FontAwesomeIcon icon={[ 'fab', 'twitter' ]} color="#00acee" size="1x" /> Twitter
 						</li>
 					</a>
 					<a className="top-nav-item">

@@ -36,6 +36,9 @@ const CFAHome = (props) => {
 							</em>
 						</p>
 					</div>
+					<p className="cfk-banner-intro">
+						Computing Kids offers camps and enrichment classes that teach computer science to K-8 students. With experienced instructors, small class sizes, and student-tested curriculum, our classes deliver fun, educational experiences in interactive environments made for learning, creating, and mastering technology skills.
+					</p>
 					<div className="desc col3">
 						{cfkCards.map((card) => (
 							<Card icon={card.icon} img={card.img} title={card.title} desc={card.desc} />
@@ -75,7 +78,7 @@ const CFAHome = (props) => {
 							&nbsp;is our initiative to provide underserved youth ages 16-24 with the Computer Science
 							skills they need to succeed in entry level technology job opportunities.
 						</p>
-						<span className="span-button">Learn more &nbsp; >></span>
+						<span className="span-button">Learn more &nbsp; &gt;&gt;</span>
 					</div>
 					<figure id="dsfa-banner-img" class="border">
 						<img src={DSFA} alt="students on computer" />
