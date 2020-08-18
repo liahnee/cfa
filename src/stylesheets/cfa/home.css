@@ -1,32 +1,112 @@
 :root {
-    --color-fb: #3b5998;
-    --color-youtube: #c4302b;
-    --color-twitter: #00acee;
+    --color-box: rgba(50, 56, 139, 0.808);
+    --color-mid-btns: white;
 }
 
+/* background applied only to cfa home */
 
-.App {
-    background: url(../../assets/banner_images/1.png);
+.App { 
+    background: url(../../assets/banner_images/9.jpg);
     background-size: cover;
     position: fixed;
     z-index: 5;
 }
 
+/* top banner */
+
+.banner-intro {
+    position: relative;
+    z-index: 5;
+    display: grid;
+    grid-template-areas:
+    ". . ."
+    ". a a"
+    ". . .";
+    grid-template-columns: 5vw 40vw auto;
+    grid-template-rows: 20vh 40vh auto ;
+    height:80vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.banner-text {
+    /* background-color: var(--color-box); */
+    position: relative;
+    z-index: 20;
+    grid-area: a;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner-text span {
+    padding-bottom: 2rem;
+}
+
+
+/* floating buttons/menus on the top banner bottom border */
+
+.banner-intro-box {
+    margin: -5% 5rem -2% auto;
+    width: 60%;
+    height: 5rem;
+    position: relative;
+    z-index: 10;
+    background-color: var(--color-mid-btns);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    box-shadow: 3px 2px 2px 0px rgba(0, 0, 0, 0.356);
+}
+
+.banner-intro-box > div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin: 0.5rem;
+    border-right: 1px solid rgb(161, 161, 161);
+}
+.banner-intro-box > div:last-child {
+    border: none;
+}
+
+
+.banner-intro-box > div:hover {
+    cursor: pointer;
+}
+
+
+
+.empty-div {
+    position: relative;
+    height: 200px;
+    width:100vw;
+    background-color: white;
+}
+
+/* common banner css */
+
 .banner {
-    height: 70vh;
     width: 100vw;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 4rem 0 8rem 0;
 }
 
 .banner-container {
     width: 80vw;
     height: 80%;
     display: grid;
-    grid-template-rows: 5rem auto;
+    grid-template-rows: fit-content(30%);
+    gap: 4rem;
 }
 
 .banner-container .header {
@@ -40,50 +120,119 @@
     border-right: 7px solid rgb(28, 30, 124);
 }
 
-.banner-intro-box {
-    margin: -5% 5rem -2% auto;
-    width: 60%;
-    height: 5rem;
-    position: relative;
-    z-index: 10;
-    background-color: rgb(255, 255, 255);
+
+
+.banner-desc { /* description next to banner title */
+    padding-left: 3rem;
+    width: 100%;
+    margin: 0;
+    color: var(--color-darkgrey);
+    font-size: 1.4rem;
+    align-self: center;
+}
+
+/* spacing columns for cards inside banner */
+.col3 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    
 }
 
-.banner-intro-box > div {
+.col3 > div {
+    border-right: 1px solid grey;
     display: flex;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    box-shadow: -3px -2px 2px 0px rgba(0, 0, 0, 0.356) inset;
+    text-align: left;
+    padding: 2rem;
 }
 
-.banner-intro-box > div:hover {
-    cursor: pointer;
+.col3 > div:last-child {
+    border: none !important;
 }
 
-.banner-intro-box > div i {
-    font-size: 48px;
+.desc {
+    padding-top: 2rem;
 }
 
-
-#fb-i { color: var(--color-fb); };
-#youtube-i {color: var(--color-youtube)};
-#twitter-i {color:var(--color-twitter)};
-
-
-
-
+/* individual banners */
 
 #dsfa-banner {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(204, 210, 221);
 }
 
-.empty-div {
+/* dsfa youth */
+
+.dsfa-youth {
     position: relative;
-    height: 10%;
-    width:100vw;
-    background-color: black;
+    width: 75vw;
+    background: linear-gradient(217deg, rgba(3, 0, 153, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0, 47, 255, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(60, 138, 255, 0.8), rgba(0,0,255,0) 70.71%);
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.dsfa-youth p {
+    position: relative;
+    width: 60%;
+    color:white;
+    padding: 3rem 2rem 5rem 3rem;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.dsfa-youth > div {
+    position: relative;
+}
+.emphasized {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#dsfa-banner-img img {
+    width: 30vw;
+    height: auto;
+    margin: 0;
+    filter: saturate(75%);
+}
+
+.border {
+    position: absolute;
+    top: 0;
+    right: -5rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.border:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+    background-color: transparent;
+    border: 8px solid rgba(71, 71, 230, 0.603);
+    z-index: 10;
+}
+
+.span-button{
+    display: block;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 2rem;
+    left: 10rem;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+    border: 2px solid rgba(2, 0, 138, 0.514);
+    box-shadow: -2px -2px 3px rgb(0, 0, 110) inset;
+    border-radius: 5px;
+}
+.span-button:hover {
+    cursor: pointer;
 }

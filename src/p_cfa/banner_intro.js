@@ -18,6 +18,8 @@ const Banner = (props) => {
 		<div className="banner-intro">
 			<div className="banner-intro-background" />
 			<div className="banner-text">
+				<span>Computing For ALL</span>
+				
 				<div class="banner-button" />
 			</div>
 		</div>

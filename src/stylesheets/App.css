@@ -1,6 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sansfamily=Zilla+Slab:wght@500&family=Open+Sans&display=swap');
+
+:root {
+  --color-fb: #3b5998;
+  --color-youtube: #c4302b;
+  --color-twitter: #00acee;
+  --color-darkgrey: rgb(73, 73, 73);
+  --color-setblue: rgb(27, 27, 92);
+}
+
 .App, .index {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
   z-index: 0;
+}
+
+/* component/card */
+
+.card {
+  padding: 2rem;
+}
+
+.card .title {
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 2rem 0 4rem 0;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .card-desc {
+  padding-top: 2rem;
+  /* font-weight: 500; */
+  font-style: "Open Sans", sans-serif;
+  letter-spacing: 0.1rem;
+  white-space: 1.2rem;
+  line-height: 1.4rem;
+}
+
+
+/* component/listCompanies.js */
+
+.co-list {
+  background-color: white;
+  width: 100vw;
+  margin: 0;
+  padding: 4rem 0 8rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.co-list-container {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  row-gap: 2rem;
+  justify-items: center;
+}
+
+.co-list > div.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2rem 0 4rem 0;
+}
+
+.co-list img {
+  max-width: 200px;
+  max-height: 100px;
+  flex-grow: 1;
+
 }

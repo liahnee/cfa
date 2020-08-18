@@ -8,10 +8,11 @@
     z-index: 99;
     font-weight: bold;
     font-size: 1rem;
-    color: rgba(0, 0, 0, 0.733);
+    color: rgba(0, 0, 0, 0.87);
   }
-  .sec-nav-bar ul {
+  .sec-nav-group > ul {
     background-color: rgb(255, 255, 255);
+    height: 100%;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -19,12 +20,14 @@
     justify-content: flex-end;
     padding: 0 2rem 0 0;
     margin: 0;
+    border-bottom: 3px solid var(--color-setblue);
   }
 
   .sec-nav-item {
     padding: 0.8rem 1rem;
     display: inline-block;
     align-self: center;
+    height: 100%;
   }
 
   .sec-nav-item:hover {

@@ -1,16 +1,140 @@
 import React from 'react';
+
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
+
+import '../stylesheets/cfa/home.css';
+
 import TopBanner from './banner_intro';
 import DSFA from '../assets/banner_images/6.png';
 import ListCompanies from '../components/listCompanies';
+import Card from '../components/card';
 
-import '../stylesheets/cfa/mainBanner.css';
-import '../stylesheets/cfa/home.css';
+import CFK1 from '../assets/card_images/cfk-1.png';
+import CFK2 from '../assets/card_images/cfk-2.png';
+import CFK3 from '../assets/card_images/cfk-3.png';
+
+const CFAHome = (props) => {
+	return (
+		<div className="cfa-home">
+			<TopBanner text={''} />
+			<div className="banner-intro-box">
+				<div> </div>
+				<div> </div>
+				<div> </div>
+				<div> </div>
+				<div> </div>
+			</div>
+			<div className="empty-div" />
+			<div id="cfk-banner" className="banner">
+				<div className="banner-container">
+					<div className="header">
+						<span>Computing for Kids</span>
+						<p className="banner-desc">
+							{' '}
+							<em>
+								Shaping Students.<br />Shaping Future.
+							</em>
+						</p>
+					</div>
+					<div className="desc col3">
+						{cfkCards.map((card) => (
+							<Card icon={card.icon} img={card.img} title={card.title} desc={card.desc} />
+						))}
+					</div>
+				</div>
+			</div>
+			<div id="dsfa-banner" className="banner dsfa">
+				<div className="banner-container">
+					<div className="header">
+						<span>Digital Skills for All</span>
+					</div>
+				</div>
+			</div>
+			<div className="banner">
+				<div className="dsfa-youth">
+					<div>
+						<p>
+							<span className="emphasized">Digital Youth Academy</span> <br />
+							<br />
+							&nbsp;is our initiative to provide underserved youth ages 16-24 with the Computer Science
+							skills they need to succeed in entry level technology job opportunities.
+						</p>
+						<span className="span-button">Learn More</span>
+					</div>
+					<figure id="dsfa-banner-img" class="border">
+						<img src={DSFA} alt="students on computer" />
+					</figure>
+				</div>
+			</div>
+
+			<div id="cfa-c-banner" className="banner cfa-c">
+				<div className="banner-container">
+					<div className="header">
+						<span>CFA Competition</span>
+						<p className="banner-desc"> </p>
+					</div>
+					<div className="desc col3" />
+				</div>
+			</div>
+			<div>
+				{coli.map((p) => {
+					return <ListCompanies title={p.title} logos={p.logos} />;
+				})}
+			</div>
+		</div>
+	);
+};
+
+export default CFAHome;
+
+const cfkCards = [
+	{
+		icon: {
+			icon: '',
+			color: 'blue',
+			size: 'lg'
+		},
+		img: {
+			src: CFK1,
+			alt: 'skills of 21st century'
+		},
+		title: 'Skill of the 21st Century',
+		desc:
+			'Computer programming will be a sought-after skill for future jobs and internship opportunities. Kids who feel confident with coding can harness that technology in any career they choose.'
+	},
+	{
+		icon: {
+			icon: '',
+			color: '',
+			size: ''
+		},
+		img: {
+			src: '',
+			alt: ''
+		},
+		title: '',
+		desc: ''
+	},
+	{
+		icon: {
+			icon: '',
+			color: '',
+			size: ''
+		},
+		img: {
+			src: '',
+			alt: ''
+		},
+		title: '',
+		desc: ''
+	}
+];
 
 const coli = [
 	{
 		title: 'Funders and Donors',
 		logos: [
-			'http://www.computingforall.org/wp-content/uploads/2020/07/partner-SEAOCD.png',
+			'https://ecdev.blob.core.windows.net/public/client/seattle/images/seattle-logo.png',
 			'http://www.computingforall.org/wp-content/uploads/2020/07/partner-SEAIT.png',
 			'http://www.computingforall.org/wp-content/uploads/2020/07/CCW_Logo_Color-RGB.jpg',
 			'http://www.computingforall.org/wp-content/uploads/2015/02/msft.jpg',
@@ -42,56 +166,3 @@ const coli = [
 		]
 	}
 ];
-
-const CFAHome = (props) => {
-	return (
-		<div className="cfa-home">
-			<TopBanner text={''} />
-			<div className="banner-intro-box">
-				<div> <i id="fb-i" class="material-icons">facebook</i> </div>
-				<div> <i id="youtube-i" class="fab fa-youtube"></i> </div>
-				<div> <i id="twitter-i" class="fab fa-twitter"></i> </div>
-				<div> 4 </div>
-				<div> 5 </div>
-			</div>
-            <div className="empty-div">
-            </div>
-			<div id="cfk-banner" className="banner">
-				<div className="banner-container">
-					<div className="header">
-						<span>Computing for Kids</span>
-						<quote />
-					</div>
-					<div />
-				</div>
-			</div>
-			<div id="dsfa-banner" className="banner dsfa">
-				<div className="banner-container">
-					<div className="header">
-						<span>Digital Skills for All</span>
-						<quote />
-					</div>
-				</div>
-			</div>
-			<div id="cfa-c-banner" className="banner dsfa">
-				<div className="banner-container">
-					<div className="header">
-						<span>CFA Competition</span>
-						<quote />
-					</div>
-				</div>
-			</div>
-			<div>
-				{coli.map((p) => {
-					return <ListCompanies title={p.title} logos={p.logos} />;
-				})}
-			</div>
-		</div>
-	);
-};
-
-export default CFAHome;
-
-{
-	/* <img src={DSFA} alt="students on computer"/> */
-}

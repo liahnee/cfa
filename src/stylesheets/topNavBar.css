@@ -1,25 +1,26 @@
 .top-nav-bar {
     width: 100vw;
-    height: 3rem;
+    height: 3.5rem;
     position: relative;
     z-index: 100;
     font-weight: bold;
-    color: rgb(7, 7, 7);
+    color: rgb(49, 49, 49);
     font-size: 0.9rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0em;
-    /* background: rgba(255, 255, 255, 0.37); */
+    background: white;
 }
 
 .cfa-logo-img {
     position: relative;
-    top: 2rem;
+    top: 1rem;
     left: 0;
     height: 4rem;
     transition: left 0.5s;
     animation: colorin 4s;
     animation-fill-mode: forwards;
+    z-index: 100;
 }
 
 @keyframes colorin {
@@ -89,6 +90,8 @@
     transition: top 0.5s;
 }
 
+
 .top-nav-item:hover li{
     top: -0.25rem;
 }
+

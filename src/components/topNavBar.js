@@ -1,13 +1,9 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../stylesheets/topNavBar.css';
 
 import CFALogo from './cfaLogo';
-
-import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-
 const TopNavBar = (props) => {
 	const [ anchorEl, setAnchorEl ] = React.useState(null);
 
@@ -17,19 +13,34 @@ const TopNavBar = (props) => {
 
 	const handleClose = () => {
 		setAnchorEl(null);
-    };
-    
+	};
+
 	return (
 		<div className="top-nav-bar">
-            <CFALogo />
+			<CFALogo />
 
 			<nav className="top-nav-group">
 				<ul className="top-nav-list">
 					<a className="top-nav-item">
-						<li>About Us</li>
+						<li>
+							<FontAwesomeIcon icon={[ 'fab', 'facebook' ]} color="#3b5998" size="2x" />
+						</li>
 					</a>
 					<a className="top-nav-item">
-						<li>Donate</li>
+						<li>
+							<FontAwesomeIcon icon={[ 'fab', 'youtube' ]} color="#c4302b" size="2x"  />
+						</li>
+					</a>
+					<a className="top-nav-item">
+						<li>
+							<FontAwesomeIcon icon={[ 'fab', 'twitter' ]} color="#00acee" size="2x" />
+						</li>
+					</a>
+					<a className="top-nav-item">
+						<li>ABOUT US</li>
+					</a>
+					<a className="top-nav-item">
+						<li>DONATE</li>
 					</a>
 				</ul>
 			</nav>
