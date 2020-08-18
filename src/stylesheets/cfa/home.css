@@ -46,7 +46,7 @@
     padding: 0 0 4rem 10vw ;
 }
 
-.banner-text p {
+.banner-text > p {
     font-size: 24px;
     font-weight: normal;
 }
@@ -183,7 +183,7 @@
     position: relative;
     width: 60%;
     color:white;
-    padding: 3rem 2rem 8grem 3rem;
+    padding: 3rem 2rem 8rem 3rem;
     font-size: 24px;
     font-weight: 600;
     line-height: 2rem;
