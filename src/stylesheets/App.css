@@ -8,7 +8,7 @@
   --color-setblue: rgb(27, 27, 92);
 }
 
-.App, .index {
+.App {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
