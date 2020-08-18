@@ -325,6 +325,8 @@
 
 #cfk-summary .span-button {
     bottom: 6rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* dsfk */
