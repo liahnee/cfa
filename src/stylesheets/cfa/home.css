@@ -4,7 +4,7 @@
     --color-section-border: rgb(0, 0, 85);
 }
 
-/* background applied only to cfa home */
+/* resuable components css only to cfa-home */
 
 .App { 
     background: url(../../assets/banner_images/9.jpg);
@@ -14,6 +14,10 @@
 }
 .App:hover {
     cursor: default;
+}
+
+.co-list {
+    border-top: 5px solid var(--color-section-border);
 }
 /* top banner */
 
@@ -246,8 +250,9 @@
 .dsfa-youth {
     position: relative;
     width: 75vw;
-    background: linear-gradient(217deg, rgba(3, 0, 153, 0.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0, 47, 255, 0.8), rgba(0,255,0,0) 70.71%),
+    /* background: linear-gradient(217deg, rgba(3, 0, 153, 0.8), rgba(255,0,0,0) 70.71%), */
+    background: linear-gradient(217deg, var(--color-section-border), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgb(22, 22, 156), rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(60, 138, 255, 0.8), rgba(0,0,255,0) 70.71%);
     display: grid;
     grid-template-columns: 5fr 1fr;
@@ -312,11 +317,11 @@
     /* border: 2px solid rgba(2, 0, 138, 0.514); */
     /* box-shadow: 0px -1px 3px rgb(0, 0, 110) inset; */
     /* border-radius: 5px; */
-    background-color: rgba(0, 47, 255, 0.479);
+    background-color: rgba(17, 35, 116, 0.479);
 }
 .span-button:hover {
     cursor: pointer;
-    background-color: rgb(76, 0, 255);
+    background-color: rgb(21, 29, 143);
     /* box-shadow: 0px -1px 3px rgba(22, 12, 110, 0.342) inset; */
 }
 
