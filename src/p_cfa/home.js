@@ -73,16 +73,12 @@ const CFAHome = (props) => {
 							be equipped to become creators rather than just consumers of technology.” <br /><br />
 							<em>- Ritu Bahl, Computing Kids Founder</em>
 						</p>
-						<p> Computing Kids is your source for high quality, project-based CAMPS and CLASSES </p>
-						<p>
-							We offer camps and programs in public schools, private schools, and community spaces
-							throughout Seattle and the surrounding metro area. Look for Computing Kids’ Summer 2020
-							camps at Pacific Science Center, Bellevue College, Lakeside School and more.
-						</p>
+						<p> Computing Kids is your source for high quality, project-based CAMPS and CLASSES throughout Seattle and the surrounding metro area.</p>
 						<p>
 							And now find us ONLINE! Take advantage of our exciting and interactive classes from the
 							comfort &amp; security of home.
 						</p>
+						<span className="span-button">View Our Courses</span>
 					</div>
 					<div id="cfk-menu">
 						<div className="cfk-menu-item one">
