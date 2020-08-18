@@ -46,12 +46,17 @@ const CFAHome = (props) => {
 			<div className="fixed-bg cfk-bg">
 				<div id="cfk-content">
 					<div id="cfk-menu">
-						<div className="cfk-menu-item">menu 1</div>
-						<div className="cfk-menu-item">menu 2</div>
-						<div className="cfk-menu-item">menu 3</div>
-						<div className="cfk-menu-item">menu 4</div>
+						<div className="cfk-menu-item"><span>CAMP and ENRICHMENT CLASSES</span></div>
+						<div className="cfk-menu-item"><span>KIDS TEACH KIDS</span></div>
+						<div className="cfk-menu-item"><span>PROJECT GALLERY</span></div>
+						<div className="cfk-menu-item"><span>OUR TEACHERS</span></div>
 					</div>
-					<div id="cfk-summary"></div>
+					<div id="cfk-summary">
+						<p>CFK Program</p>
+						<p> Computing Kids is your source for high quality, project-based CAMPS and CLASSES </p>
+						
+						<p>“Kids who learn collaborative problem-solving computing skills early in their education will be equipped to become creators rather than just consumers of technology.” <br/>… Ritu Bahl, Computing Kids Founder</p>
+					</div>
 				</div>
 			</div>
 			<div id="dsfa-banner" className="banner dsfa">
@@ -70,7 +75,7 @@ const CFAHome = (props) => {
 							&nbsp;is our initiative to provide underserved youth ages 16-24 with the Computer Science
 							skills they need to succeed in entry level technology job opportunities.
 						</p>
-						<span className="span-button">Learn More</span>
+						<span className="span-button">Learn more &nbsp; >></span>
 					</div>
 					<figure id="dsfa-banner-img" class="border">
 						<img src={DSFA} alt="students on computer" />

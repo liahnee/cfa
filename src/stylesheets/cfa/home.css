@@ -212,14 +212,15 @@
     background-color: rgba(0, 0, 0, 0.479);
     display: grid;
     grid-template-columns: 40vw auto;
+    color:white;
 }
 #cfk-menu {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-areas: 
-    "a b"
-    "c d";
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 .cfk-menu-item:hover {
     background-color: rgba(0, 0, 0, 0.733);
@@ -308,11 +309,14 @@
     bottom: 2rem;
     left: 10rem;
     padding: 0.8rem 1.8rem 0.8rem 1.8rem;
-    border: 2px solid rgba(2, 0, 138, 0.514);
-    box-shadow: -2px -2px 3px rgb(0, 0, 110) inset;
-    border-radius: 5px;
+    /* border: 2px solid rgba(2, 0, 138, 0.514); */
+    /* box-shadow: 0px -1px 3px rgb(0, 0, 110) inset; */
+    /* border-radius: 5px; */
+    background-color: rgba(0, 47, 255, 0.479);
 }
 .span-button:hover {
     cursor: pointer;
+    background-color: rgb(76, 0, 255);
+    /* box-shadow: 0px -1px 3px rgba(22, 12, 110, 0.342) inset; */
 }
 
