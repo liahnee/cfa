@@ -239,7 +239,7 @@
 #cfk-content {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgba(0, 0, 0, 0.8);
     display: grid;
     grid-template-columns: 45vw auto;
     color:white;
@@ -266,19 +266,31 @@
     transition: background-color 0.6s ease;
 }
 
+.cfk-menu-item > div {
+    height: calc(100% - 2rem);
+    width: 100%;
+    margin: 1rem; 
+    box-sizing: border-box;
+    border: 0.2rem solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.658);
+}
+
 .one, .four {
-    background-color: rgba(0, 0, 0, 0.30);
+    background-color: rgba(0, 0, 0, 0.50);
 }
 
 .cfk-menu-item:hover {
-    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-color: rgba(0, 0, 0, 1) !important;
     cursor: pointer;
 }
-.one:hover, .four:hover  {
+.one:hover > div, .four:hover >div {
     color: rgb(128, 156, 233);
 }
 
-.two:hover, .three:hover {
+.two:hover > div, .three:hover >div {
     color: rgb(121, 216, 121);
 }
 
@@ -288,7 +300,7 @@
 }
 
 #cfk-summary > p {
-    margin: 0 2rem;
+    margin: 0 12%;
     padding: 1rem 2rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -302,6 +314,7 @@
     margin-top: 3rem;
     color: white;
     padding-bottom:2rem;
+    font-family: 'Playfair Display', serif;
 }
 #cfk-summary > p:nth-child(2) {
     font-size: 1rem;

@@ -88,16 +88,28 @@ const CFAHome = (props) => {
 					</div>
 					<div id="cfk-menu">
 						<div className="cfk-menu-item one">
-							<span>CAMP &amp; CLASSES </span>
+							<div>
+								<span>CAMP &amp; CLASSES </span>
+
+							</div>
 						</div>
 						<div className="cfk-menu-item two">
-							<span>KIDS TEACH KIDS</span>
+							<div>
+								<span>KIDS TEACH KIDS</span>
+
+							</div>
 						</div>
 						<div className="cfk-menu-item three">
-							<span>PROJECT GALLERY</span>
+							<div>
+								<span>PROJECT GALLERY</span>
+
+							</div>
 						</div>
 						<div className="cfk-menu-item four">
-							<span>OUR TEACHERS</span>
+							<div>
+								<span>OUR TEACHERS</span>
+
+							</div>
 						</div>
 					</div>
 				</div>
