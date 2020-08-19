@@ -239,7 +239,7 @@
 #cfk-content {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 35, 51, 0.8);
     display: grid;
     grid-template-columns: 45vw auto;
     color:white;
@@ -279,7 +279,7 @@
 }
 
 .one, .four {
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(6, 40, 53, 0.5);
 }
 
 .cfk-menu-item:hover {
@@ -312,14 +312,14 @@
     font-weight: bold;
     border-bottom: 2px solid grey;
     margin-top: 3rem;
-    color: white;
+    color: rgb(139, 238, 255);
     padding-bottom:2rem;
     font-family: 'Playfair Display', serif;
 }
 #cfk-summary > p:nth-child(2) {
     font-size: 1rem;
     font-weight: 600;
-    color: rgb(209, 212, 255);
+    color: rgb(0, 107, 179);
     border-bottom: 2px solid grey;
 }
 
@@ -342,6 +342,10 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgb(37, 150, 170);;
+}
+#cfk-summary .span-button:hover {
+    background-color: rgb(0, 98, 143);
 }
 
 /* dsfk */
