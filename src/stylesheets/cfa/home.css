@@ -2,7 +2,7 @@
 :root {
     --color-box: rgba(50, 56, 139, 0.808);
     --color-mid-btns: white;
-    --color-section-border: rgb(0, 0, 85);
+    --color-section-border: rgb(8, 83, 133);
 }
 
 /* resuable components css only to cfa-home */
@@ -209,11 +209,11 @@
     /* border: 2px solid rgba(2, 0, 138, 0.514); */
     /* box-shadow: 0px -1px 3px rgb(0, 0, 110) inset; */
     /* border-radius: 5px; */
-    background-color: rgba(32, 52, 143, 0.479);
+    background-color: rgba(5, 143, 197, 0.726);
 }
 .span-button:hover {
     cursor: pointer;
-    background-color: rgb(21, 29, 143);
+    background-color: rgb(34, 109, 170);
     /* box-shadow: 0px -1px 3px rgba(22, 12, 110, 0.342) inset; */
 }
 
@@ -368,30 +368,37 @@
     width: 75vw;
     /* background: linear-gradient(217deg, rgba(3, 0, 153, 0.8), rgba(255,0,0,0) 70.71%), */
     background: linear-gradient(217deg, var(--color-section-border), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgb(22, 22, 156), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(60, 138, 255, 0.8), rgba(0,0,255,0) 70.71%);
+            linear-gradient(127deg, rgb(2, 155, 175), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(60, 209, 255, 0.8), rgba(0,0,255,0) 70.71%);
     display: grid;
     grid-template-columns: 5fr 1fr;
     justify-content: center;
     align-items: center;
 }
 
-.dsfa-youth p {
+.dsfa-youth-content {
     position: relative;
     width: 60%;
     color:white;
     padding: 3rem 2rem 8rem 3rem;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 2rem;
 }
 
-.dsfa-youth > div {
-    position: relative;
-}
-.emphasized {
+.dsfa-youth-title {
     font-size: 42px;
     font-weight: bold;
+}
+
+
+.dsfa-youth-content > p:nth-child(2) {
+    font-style:  'Baloo Tamma 2', cursive;
+    line-height: 2rem;
+    letter-spacing: 0.08rem;
+    white-space: 1.2rem;
+    font-size: 24px;
+    font-weight: 500;
+}
+.dsfa-youth > div {
+    position: relative;
 }
 
 #dsfa-banner-img img {
@@ -417,12 +424,11 @@
     top: 1rem;
     left: -2rem;
     background-color: transparent;
-    border: 8px solid rgba(71, 71, 230, 0.603);
+    border: 8px solid rgba(35, 183, 228, 0.747);
     z-index: 10;
 }
 
 .dsfa-youth .span-button {
-
     position: absolute;
     bottom: 2rem;
     left: 10rem;

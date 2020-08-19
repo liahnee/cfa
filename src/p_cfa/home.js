@@ -90,25 +90,21 @@ const CFAHome = (props) => {
 						<div className="cfk-menu-item one">
 							<div>
 								<span>CAMP &amp; CLASSES </span>
-
 							</div>
 						</div>
 						<div className="cfk-menu-item two">
 							<div>
 								<span>KIDS TEACH KIDS</span>
-
 							</div>
 						</div>
 						<div className="cfk-menu-item three">
 							<div>
 								<span>PROJECT GALLERY</span>
-
 							</div>
 						</div>
 						<div className="cfk-menu-item four">
 							<div>
 								<span>OUR TEACHERS</span>
-
 							</div>
 						</div>
 					</div>
@@ -123,12 +119,11 @@ const CFAHome = (props) => {
 			</div>
 			<div id="dsfa-youth-banner" className="banner">
 				<div className="dsfa-youth">
-					<div>
+					<div className="dsfa-youth-content">
+						<p className="dsfa-youth-title">Digital Youth Academy</p>
 						<p>
-							<span className="emphasized">Digital Youth Academy</span> <br />
-							<br />
-							&nbsp;is our initiative to provide underserved youth ages 16-24 with the Computer Science
-							skills they need to succeed in entry level technology job opportunities.
+							is our initiative to provide underserved youth ages 16-24 with the Computer Science skills
+							they need to succeed in entry level technology job opportunities.
 						</p>
 						<span className="span-button">Learn more &nbsp; &gt;&gt;</span>
 					</div>
