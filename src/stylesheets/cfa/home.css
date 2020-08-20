@@ -8,7 +8,7 @@
 /* resuable components css only to cfa-home */
 
 .App { 
-    background: url(../../assets/banner_images/9.jpg);
+    background: url(../../assets/banner_images/c.jpg);
     background-size: cover;
     position: fixed;
     z-index: 5;
@@ -171,7 +171,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-content: flex-end;
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color: rgba(22, 162, 204, 0.719);
     padding: 0 10vw 2rem 10vw;
 }
 
@@ -203,7 +203,7 @@
     background: repeating-linear-gradient(
         to bottom, 
         transparent 0%,
-        rgba(0, 0, 0, 0.473) .5%,
+        rgba(41, 116, 177, 0.473) .5%,
         transparent 1%
     );
     z-index: -1;
