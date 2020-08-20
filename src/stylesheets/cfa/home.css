@@ -43,13 +43,41 @@
 
 .banner-container .header {
     display: grid;
-    grid-template-columns: 30vw auto;
+    grid-template-columns: 25rem auto;
+    position:relative;
+    z-index: 10;
 }
+
+/* .banner-container .header:after {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: -4.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(91, 222, 255);
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.banner-container .header:before {
+    content: "";
+    position: absolute;
+    top: -4.5rem;
+    left: -4rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(49, 163, 240);
+    z-index: -1;
+    border-radius: 50%;
+} */
 
 .banner-container .header > span {
     font-size: 2.5rem;
     font-weight: bold;
-    border-right: 7px solid rgb(28, 30, 124);
+    border-right: 7px solid rgb(0, 178, 223);
+    padding-right: 5rem;
+    color: rgba(0, 0, 0, 0.918);
 }
 
 
@@ -299,10 +327,33 @@
     margin: 1rem; 
     box-sizing: border-box;
     border: 0.2rem solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    flex-direction: column;
     color: rgba(255, 255, 255, 0.658);
+    position: relative;
+}
+
+
+.cfk-menu-item > div span {
+    align-self: flex-end;
+    padding-bottom: 2rem;
+}
+
+.cfk-menu-item > div p {
+    font-size: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+.cfk-menu-item > div:after {
+    content: "";
+    width: 4rem;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 2rem);
+    border-top: 2px solid;
+    color: rgba(255, 255, 255, 0.363);
 }
 
 .one, .four {
