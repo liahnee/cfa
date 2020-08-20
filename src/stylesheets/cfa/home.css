@@ -20,6 +20,101 @@
 .co-list {
     border-top: 5px solid var(--color-section-border);
 }
+
+/* common banner css */
+
+.banner {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0 8rem 0;
+}
+
+.banner-container {
+    width: 80vw;
+    height: 80%;
+    display: grid;
+    grid-template-rows: fit-content(30%);
+    gap: 2rem;
+}
+
+.banner-container .header {
+    display: grid;
+    grid-template-columns: 30vw auto;
+}
+
+.banner-container .header > span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-right: 7px solid rgb(28, 30, 124);
+}
+
+
+
+.banner-desc { /* description next to banner title */
+    padding-left: 3rem;
+    width: 100%;
+    margin: 0;
+    color: var(--color-darkgrey);
+    font-size: 1.4rem;
+    align-self: center;
+}
+.bg-colored {
+    background-color: rgb(192, 228, 233);
+}
+
+/* spacing columns for cards inside banner */
+.col3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.col3 > div {
+    border-right: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.col3 > div:last-child {
+    border: none !important;
+}
+
+.desc {
+    padding-top: 2rem;
+}
+
+.fixed-bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.span-button{
+    display: block;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+    /* border: 2px solid rgba(2, 0, 138, 0.514); */
+    /* box-shadow: 0px -1px 3px rgb(0, 0, 110) inset; */
+    /* border-radius: 5px; */
+    background-color: rgba(5, 143, 197, 0.726);
+}
+.span-button:hover {
+    cursor: pointer;
+    background-color: rgb(34, 109, 170);
+    /* box-shadow: 0px -1px 3px rgba(22, 12, 110, 0.342) inset; */
+}
+
+/* individual banners */
+
 /* top banner */
 
 .banner-intro {
@@ -38,7 +133,6 @@
 }
 
 .banner-text {
-    /* background-color: var(--color-box); */
     position: relative;
     z-index: 20;
     grid-area: a;
@@ -48,9 +142,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* align-items: flex-end; */
     background-color: rgba(0, 0, 0, 0.719);
-    padding: 0 0 4rem 10vw ;
+    padding: 0 0 4rem 10vw;
 }
 
 .banner-text > p {
@@ -58,11 +151,36 @@
     font-weight: normal;
 }
 
-.App:hover {
-    cursor: default;
+
+.banner-text:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: repeating-linear-gradient(
+        to bottom, 
+        transparent 0%,
+        rgba(0, 0, 0, 0.473) .5%,
+        transparent 1%
+    );
+    z-index: -1;
+}
+/* 
+.banner-text:hover  {
+    animation: glitch 5s 5s infinite;
 }
 
-
+@keyframes glitch {
+    1% {
+        transform: rotateX(10deg) skewX(90deg);
+    }
+    2% {
+        transform: rotateX(0deg) skewX(0deg);
+    }
+}
+ */
 
 /* floating buttons/menus on the top banner bottom border */
 
@@ -127,97 +245,6 @@
     width:100vw;
     background-color: white;
 }
-
-/* common banner css */
-
-.banner {
-    width: 100vw;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 8rem 0 8rem 0;
-}
-
-.banner-container {
-    width: 80vw;
-    height: 80%;
-    display: grid;
-    grid-template-rows: fit-content(30%);
-    gap: 2rem;
-}
-
-.banner-container .header {
-    display: grid;
-    grid-template-columns: 30vw auto;
-}
-
-.banner-container .header > span {
-    font-size: 2.5rem;
-    font-weight: bold;
-    border-right: 7px solid rgb(28, 30, 124);
-}
-
-
-
-.banner-desc { /* description next to banner title */
-    padding-left: 3rem;
-    width: 100%;
-    margin: 0;
-    color: var(--color-darkgrey);
-    font-size: 1.4rem;
-    align-self: center;
-}
-
-/* spacing columns for cards inside banner */
-.col3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-}
-
-.col3 > div {
-    border-right: 1px solid grey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-}
-
-.col3 > div:last-child {
-    border: none !important;
-}
-
-.desc {
-    padding-top: 2rem;
-}
-
-.fixed-bg {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.span-button{
-    display: block;
-    color: white;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
-    /* border: 2px solid rgba(2, 0, 138, 0.514); */
-    /* box-shadow: 0px -1px 3px rgb(0, 0, 110) inset; */
-    /* border-radius: 5px; */
-    background-color: rgba(5, 143, 197, 0.726);
-}
-.span-button:hover {
-    cursor: pointer;
-    background-color: rgb(34, 109, 170);
-    /* box-shadow: 0px -1px 3px rgba(22, 12, 110, 0.342) inset; */
-}
-
-/* individual banners */
 
 /* cfk banner */
 
@@ -356,8 +383,6 @@
 
 /* dsfa youth */
 #dsfa-youth-banner {
-  border-bottom: 5px solid var(--color-section-border);
-  /* border-top: 5px solid var(--color-section-border); */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -117,7 +117,7 @@ const CFAHome = (props) => {
 					</div>
 				</div>
 			</div>
-			<div id="dsfa-youth-banner" className="banner">
+			<div id="dsfa-youth-banner" className="banner bg-colored">
 				<div className="dsfa-youth">
 					<div className="dsfa-youth-content">
 						<p className="dsfa-youth-title">Digital Youth Academy</p>
@@ -132,7 +132,6 @@ const CFAHome = (props) => {
 					</figure>
 				</div>
 			</div>
-
 			<div id="cfa-c-banner" className="banner cfa-c">
 				<div className="banner-container">
 					<div className="header">
