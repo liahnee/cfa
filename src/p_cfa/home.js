@@ -17,26 +17,30 @@ import CFK3 from '../assets/card_images/cfk-3.png';
 const CFAHome = (props) => {
 	return (
 		<div className="cfa-home">
-			<TopBanner text={''} />
+			<div className="banner-intro">
+				<div className="banner-intro-background" />
+				<div className="banner-text">
+					<span>Computing for All</span>
+					<p>
+						<em>Dedicated to developing the future of tech talent through education.</em>
+					</p>
+					<div class="banner-button" />
+				</div>
+			</div>
 			<div className="banner-intro-box">
 				<div>
-					{' '}
 					<FontAwesomeIcon icon={faHandsHelping} size="2x" /> <span>Volunteer</span>{' '}
 				</div>
 				<div>
-					{' '}
 					<FontAwesomeIcon icon={faNewspaper} size="2x" /> <span>Our News</span>{' '}
 				</div>
 				<div>
-					{' '}
 					<FontAwesomeIcon icon={faUsers} size="2x" /> <span>Teams</span>{' '}
 				</div>
 				<div>
-					{' '}
 					<FontAwesomeIcon icon={faQuestion} size="2x" /> <span>Support</span>{' '}
 				</div>
 				<div>
-					{' '}
 					<FontAwesomeIcon icon={faAt} size="2x" /> <span>Contact</span>{' '}
 				</div>
 			</div>
@@ -69,10 +73,10 @@ const CFAHome = (props) => {
 					<div id="cfk-summary">
 						<p>CFK Program</p>
 						<p>
-							“Kids who learn collaborative problem-solving computing skills early in their education will
+							{/* “Kids who learn collaborative problem-solving computing skills early in their education will
 							be equipped to become creators rather than just consumers of technology.” <br />
 							<br />
-							<em>- Ritu Bahl, Computing Kids Founder</em>
+							<em>- Ritu Bahl, Computing Kids Founder</em> */}
 						</p>
 						<p>
 							Computing Kids is your source for high quality, project-based CAMPS and CLASSES throughout
@@ -90,25 +94,33 @@ const CFAHome = (props) => {
 						<div className="cfk-menu-item one">
 							<div>
 								<span>CAMP &amp; CLASSES </span>
-								<p><em>small class sizes for every everyone</em> </p>
+								<p>
+									<em>small class sizes for every everyone</em>{' '}
+								</p>
 							</div>
 						</div>
 						<div className="cfk-menu-item two">
 							<div>
 								<span>KIDS TEACH KIDS</span>
-								<p><em>learning experience for both students and teachers</em> </p>
+								<p>
+									<em>learning experience for both students and teachers</em>{' '}
+								</p>
 							</div>
 						</div>
 						<div className="cfk-menu-item three">
 							<div>
 								<span>PROJECT GALLERY</span>
-								<p><em>highlights of fun, educational experiences</em> </p>
+								<p>
+									<em>highlights of fun, educational experiences</em>{' '}
+								</p>
 							</div>
 						</div>
 						<div className="cfk-menu-item four">
 							<div>
 								<span>OUR TEACHERS</span>
-								<p><em>experienced instructors with tested curriculum</em> </p>
+								<p>
+									<em>experienced instructors with tested curriculum</em>{' '}
+								</p>
 							</div>
 						</div>
 					</div>
@@ -126,8 +138,8 @@ const CFAHome = (props) => {
 					<div className="dsfa-youth-content">
 						<p className="dsfa-youth-title">Digital Youth Academy</p>
 						<p>
-							Digital Youth Academy is our initiative to provide underserved youth ages 16-24 with the Computer Science skills
-							they need to succeed in entry level technology job opportunities.
+							Digital Youth Academy is our initiative to provide underserved youth ages 16-24 with the
+							Computer Science skills they need to succeed in entry level technology job opportunities.
 						</p>
 						<span className="span-button">Learn more &nbsp; &gt;&gt;</span>
 					</div>
