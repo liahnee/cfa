@@ -415,8 +415,8 @@
 
 
 .dsfa-youth-content > p:nth-child(2) {
-    font-style:  'Baloo Tamma 2', cursive;
-    line-height: 2rem;
+    font-family: 'Baloo Tamma 2', cursive;
+    line-height: 1.8rem;
     letter-spacing: 0.08rem;
     white-space: 1.2rem;
     font-size: 24px;

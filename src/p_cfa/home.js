@@ -122,7 +122,7 @@ const CFAHome = (props) => {
 					<div className="dsfa-youth-content">
 						<p className="dsfa-youth-title">Digital Youth Academy</p>
 						<p>
-							is our initiative to provide underserved youth ages 16-24 with the Computer Science skills
+							Digital Youth Academy is our initiative to provide underserved youth ages 16-24 with the Computer Science skills
 							they need to succeed in entry level technology job opportunities.
 						</p>
 						<span className="span-button">Learn more &nbsp; &gt;&gt;</span>

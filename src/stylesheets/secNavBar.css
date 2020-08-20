@@ -6,8 +6,9 @@
     position: sticky;
     top: 0;
     z-index: 99;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;;
     color: rgb(53, 53, 53);
     background-color: rgb(255, 255, 255);
   }
