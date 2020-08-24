@@ -2,7 +2,7 @@
     width: 100vw;
     height: 3.5rem;
     position: relative;
-    z-index: 100;
+    z-index: 99;
     font-weight: bold;
     color: rgb(104, 104, 104);
     font-size: 0.9rem;
@@ -17,7 +17,7 @@
     position: relative;
     top: 1rem;
     left: 0;
-    height: 4rem;
+    height: 2.5rem;
     transition: left 0.5s;
     animation: colorin 4s;
     animation-fill-mode: forwards;

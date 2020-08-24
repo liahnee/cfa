@@ -30,7 +30,7 @@ const createSublist = itemList => {
 const SecNavBar = (props) => {
 	return (
 		<div className="sec-nav-bar">
-			{props.logo}
+			<img src={props.logo} className="sec-logo" />
 
 			<nav className="sec-nav-group">
 				<ul className="sec-nav-list">

@@ -2,12 +2,13 @@ import React from 'react';
 
 import CFANavBar from '../components/secNavBar';
 import Routes from './routes';
+import CKLogo from '../assets/logos/ck-simple-logo-horiz.png';
 
 
 function CFAIndex() {
   return (
     <div className="index">
-        <CFANavBar menu={ckSecNav}/>
+        <CFANavBar menu={ckSecNav} logo={CKLogo}/>
         <Routes />
     </div>
   );
