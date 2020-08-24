@@ -7,7 +7,7 @@
     color: rgb(104, 104, 104);
     font-size: 0.9rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px auto;
     margin: 0em;
     background: white;
     padding-bottom: 1rem;
@@ -41,20 +41,32 @@
 }
 
 .top-nav-group {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
     padding: 0;
     height: inherit;
+    margin-right: 2rem;
+}
+
+.top-nav-group > ul {
+    display: flex;
+}
+
+.top-nav-group > ul:first-child {
+    align-items: flex-end;
+    justify-items: flex-start;
+
+}
+
+.top-nav-group >ul:last-child {
     align-items: flex-end;
     justify-items: flex-end;
-    margin-right: 2rem;
 }
 
 .top-nav-list {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    margin-left: auto;
 }
 
 .top-nav-item {

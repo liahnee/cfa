@@ -7,7 +7,7 @@ import Routes from './routes';
 function CFAIndex() {
   return (
     <div className="index">
-        <CFANavBar menu={secnav}/>
+        <CFANavBar menu={ckSecNav}/>
         <Routes />
     </div>
   );
@@ -86,4 +86,73 @@ const secnav = [
 		]
     }
 ];
+
+
+const ckSecNav = [
+	{
+        menu: 'CK Home',
+        sublistImg: {
+            src: "",
+            href: ""
+        },
+        href: "",
+		sublist: [
+			{
+				item: 'Home',
+                href: '',
+                class: 'c-a'
+            }
+		]
+    },
+    {
+        menu: 'CAMPS',
+        href: "",
+        sublistImg: {
+            src: "",
+            href: ""
+        },
+		sublist: [
+			{
+				item: '',
+				href: ''
+			}
+		]
+    },{
+        menu: 'CK News',
+        href: "",
+        sublistImg: {
+            src: "",
+            href: ""
+        },
+		sublist: [
+		]
+    },{
+        menu: 'About CK',
+        href: "",
+        sublistImg: {
+            src: "",
+            href: ""
+        },
+		sublist: [
+			{
+				item: '',
+				href: ''
+			}
+		]
+    },{
+        menu: 'Get Involved',
+        href: "",
+        sublistImg: {
+            src: "",
+            href: ""
+        },
+		sublist: [
+			{
+				item: '',
+				href: ''
+			}
+		]
+    }
+];
+
 

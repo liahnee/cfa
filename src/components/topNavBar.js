@@ -18,8 +18,24 @@ const TopNavBar = (props) => {
 	return (
 		<div className="top-nav-bar">
 			<CFALogo />
-
 			<nav className="top-nav-group">
+				<ul className="top-nav-list">
+					<a className="top-nav-item">
+						<li>
+							CK
+						</li>
+					</a>
+					<a className="top-nav-item">
+						<li>
+							DSFA
+						</li>
+					</a>
+					<a className="top-nav-item">
+						<li>
+							CFA Competition
+						</li>
+					</a>
+				</ul>
 				<ul className="top-nav-list">
 					<a className="top-nav-item">
 						<li>
