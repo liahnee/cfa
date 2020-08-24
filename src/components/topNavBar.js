@@ -35,6 +35,11 @@ const TopNavBar = (props) => {
 							CFA Competition
 						</li>
 					</a>
+					<a className="top-nav-item">
+						<li>
+							Gallery
+						</li>
+					</a>
 				</ul>
 				<ul className="top-nav-list">
 					<a className="top-nav-item">
