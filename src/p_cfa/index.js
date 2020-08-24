@@ -8,7 +8,7 @@ import CKLogo from '../assets/logos/ck-simple-logo-horiz.png';
 function CFAIndex() {
   return (
     <div className="index">
-        <CFANavBar menu={ckSecNav} logo={CKLogo}/>
+        <CFANavBar menu={secnav} />
         <Routes />
     </div>
   );

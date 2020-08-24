@@ -27,11 +27,18 @@ const createSublist = itemList => {
 
 }
 
+
+
 const SecNavBar = (props) => {
+	const secLogo = () => {
+		if (props.logo) {
+			return <img src={props.logo} alt={props.alt} className="sec-logo" />
+		} ;
+		return null;
+	}
 	return (
 		<div className="sec-nav-bar">
-			<img src={props.logo} className="sec-logo" />
-
+			{secLogo()}
 			<nav className="sec-nav-group">
 				<ul className="sec-nav-list">
 					{props.menu.map((item) =>  createMenu(item))}

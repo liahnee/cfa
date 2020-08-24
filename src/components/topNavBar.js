@@ -22,34 +22,12 @@ const TopNavBar = (props) => {
 				<ul className="top-nav-list">
 					<a className="top-nav-item">
 						<li>
-							CK
-						</li>
-					</a>
-					<a className="top-nav-item">
-						<li>
-							DSFA
-						</li>
-					</a>
-					<a className="top-nav-item">
-						<li>
-							CFA Competition
-						</li>
-					</a>
-					<a className="top-nav-item">
-						<li>
-							Gallery
-						</li>
-					</a>
-				</ul>
-				<ul className="top-nav-list">
-					<a className="top-nav-item">
-						<li>
 							<FontAwesomeIcon icon={[ 'fab', 'facebook' ]} color="#3b5998" size="1x" /> Facebook
 						</li>
 					</a>
 					<a className="top-nav-item">
 						<li>
-							<FontAwesomeIcon icon={[ 'fab', 'youtube' ]} color="#c4302b" size="1x"  /> YouTube
+							<FontAwesomeIcon icon={[ 'fab', 'youtube' ]} color="#c4302b" size="1x" /> YouTube
 						</li>
 					</a>
 					<a className="top-nav-item">
@@ -70,3 +48,20 @@ const TopNavBar = (props) => {
 };
 
 export default TopNavBar;
+
+const add = (
+	<ul className="top-nav-list">
+		<a className="top-nav-item">
+			<li>CK</li>
+		</a>
+		<a className="top-nav-item">
+			<li>DSFA</li>
+		</a>
+		<a className="top-nav-item">
+			<li>CFA Competition</li>
+		</a>
+		<a className="top-nav-item">
+			<li>Gallery</li>
+		</a>
+	</ul>
+);
