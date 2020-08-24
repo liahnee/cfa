@@ -54,13 +54,13 @@
 
 .top-nav-group > ul:first-child {
     align-items: flex-end;
-    justify-items: flex-start;
+    justify-content: flex-start;
 
 }
 
 .top-nav-group >ul:last-child {
     align-items: flex-end;
-    justify-items: flex-end;
+    justify-content: flex-end;
 }
 
 .top-nav-list {
